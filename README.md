@@ -15,7 +15,7 @@ This repository contains the **official project files and source code** for the 
 Biologists have long combined photographs and sketches with textual field notes to re-identify (Re-ID) individual animals based on phenotypic traits. Contemporary AI-supported camera trapping builds on this visual tradition, with computer vision tools now supporting animal re-identification across numerous species with distinctive morphological features, such as unique stripe-like coats (e.g., zebras, tigers). Here, we present the first study to extend image-only Re-ID methodologies by incorporating precise dermatoglyphic textual descriptors -- an approach widely used in forensic science but hitherto unexploited in ecology. We demonstrate that these specialist semantics can abstract and encode both the topology and structure of animal stripe coats using fully human-interpretable language tags. Drawing on 84,264 manually labelled minutiae features across 3,355 images of 185 individual tigers (Panthera tigris), we provide a comprehensive quantitative case study evaluating this new visual–textual methodology in detail, revealing novel capabilities for cross-modal dermatoglyphic animal identity retrieval. To optimise performance we synthesise 2,000 ‘virtual individuals’ multimodally, each comprising dozens of life-like tiger visuals in ecologically credible camera trap configurations paired with matching dermatoglyphic text descriptors of visible coat features. Benchmarking against real-world camera trap Re-ID scenarios shows that such augmentation can double AI accuracy in cross-modal retrieval while alleviating challenges of data scarcity for rare species and expert annotation bottlenecks. We conclude that dermatoglyphic language-guided animal biometrics can overcome key limitations of vision-only solutions and, for the first time, enable textual-to-visual identity recovery underpinned by human-verifiable minutiae matchings. Conceptually, this represents a significant advance towards explainability in Re-ID and a broader language-driven unification of descriptive modalities in AI-based ecological monitoring.
 
 ---
-
+### From Visual Minutiae Features to Dermatoglyphic Text Descriptions
 ![ From Visual Minutiae Features to Dermatoglyphic Text Descriptions](readme_images/minutiae.jpg)
 
 ---
@@ -45,6 +45,7 @@ This folder contains dermatoglyphic minutiae cropped from real-world tiger image
 - `synthesis/`  
   Region-aware statistical synthesis and RBF-based image warping correction guided by anatomical distribution priors.
 
+###Visual-textual Co-Synthesis
 ![Visual-textual Co-Synthesis](readme_images/statistical_synthesis.jpg)
 
 ---
@@ -69,14 +70,21 @@ Houdini version: 20.0
 Batch rendering scripts `houdini_rendering.py` are provided and should be executed within Houdini’s built-in Python.
 
 **Pipeline illustrations**:
+### Distortion-corrected Texture Mapping and 3D Pose Modelling:
 ![Distortion-corrected Texture Mapping and 3D Pose Modelling](readme_images/rbf.jpg)
+### Biomimetic Pelage Synthesis:
 ![Biomimetic Pelage Synthesis](readme_images/hair.jpg)
 
 **Houdini Detail**:
+### OBJ panel configuration:
 ![OBJ panel configuration](readme_images/obj.png)  
+### Pose modelling and region binding:
 ![Pose modelling and region binding](readme_images/pose.png)  
-![Hair modelling and physical simulation](readme_images/hair.png)  
+### Hair modelling and physical simulation:
+![Hair modelling and physical simulation](readme_images/hair.png) 
+### Stage migration for Karma renderer:
 ![Stage migration for Karma renderer](readme_images/stage.png)  
+### Stage materials:
 ![Stage materials](readme_images/stage_mat.png)
 
 ---
@@ -93,6 +101,8 @@ Foreground–background harmonisation uses **Harmonizer**:
 https://github.com/ZHKKKe/Harmonizer  
 
 Please cite the corresponding paper when using this component.
+
+### Rendering in realistic scenarios:
 ![Rendering in realistic scenarios](readme_images/render.jpg)
 
 ---
@@ -123,12 +133,14 @@ of its stripe pattern structure.
 
 Please cite the above datasets and papers when using them.
 
+### Synthetic dataset examples:
 ![Synthetic dataset examples](readme_images/synthetic_images.jpg)
 
 ---
 
 ## 5. Text and Image Re-ID Experiments
 
+### Reid protocols:
 ![Reid protocols](readme_images/reid.jpg)
 
 This code is partially based on:
@@ -164,6 +176,7 @@ python test.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0
 
 Best same-modality Re-ID checkpoint: `xxx`.
 
+### Single-text Re-ID results:
 ![Single-text Re-ID results](readme_images/t_and_i.jpg)
 
 ---
@@ -174,7 +187,7 @@ This module also follows the **IRRA** framework and environment.
 
 * **Baseline**: real-world data only
 * **Evaluation strategy**: keep the test set fixed and progressively add synthetic individuals to the training set
-
+### Synthetic data evaluation strategy:
 ![Synthetic data evaluation strategy](readme_images/eval.jpg)
 
 ### Dataset placement
@@ -200,7 +213,11 @@ Ablation studies show that adding **1,000 synthetic individuals** yields optimal
 
 Best checkpoint: `xxx`.
 
+### Baseline text-to-image Re-ID:
 ![Baseline text-to-image Re-ID](readme_images/reid_baseline.jpg)
+<img src="readme_images/reid_baseline.jpg" width="60%">
+
+### Optimal text-to-image Re-ID:
 ![Optimal text-to-image Re-ID](readme_images/reid_best.jpg)
 
 ---
@@ -232,5 +249,3 @@ If you use this work, please cite:
 }
 ```
 
-```
-```

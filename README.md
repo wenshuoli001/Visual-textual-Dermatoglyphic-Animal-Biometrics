@@ -77,15 +77,19 @@ Batch rendering scripts `houdini_rendering.py` are provided and should be execut
 
 **Houdini Detail**:
 ### OBJ panel configuration:
-![OBJ panel configuration](readme_images/obj.png)  
+<img src="readme_images/obj.png" width="80%">
+
 ### Pose modelling and region binding:
-![Pose modelling and region binding](readme_images/pose.png)  
+<img src="readme_images/pose.png" width="80%">
+
 ### Hair modelling and physical simulation:
-![Hair modelling and physical simulation](readme_images/hair.png) 
+<img src="readme_images/hair.png" width="80%">
+
 ### Stage migration for Karma renderer:
-![Stage migration for Karma renderer](readme_images/stage.png)  
+<img src="readme_images/stage.png" width="80%">
+
 ### Stage materials:
-![Stage materials](readme_images/stage_mat.png)
+<img src="readme_images/stage_mat.png" width="80%">
 
 ---
 
@@ -141,7 +145,7 @@ Please cite the above datasets and papers when using them.
 ## 5. Text and Image Re-ID Experiments
 
 ### Reid protocols:
-![Reid protocols](readme_images/reid.jpg)
+<img src="readme_images/reid.jpg" width="60%">
 
 This code is partially based on:
 - **TransReID**: https://github.com/damo-cv/TransReID  
@@ -177,8 +181,7 @@ python test.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0
 Best same-modality Re-ID checkpoint: `xxx`.
 
 ### Single-text Re-ID results:
-![Single-text Re-ID results](readme_images/t_and_i.jpg)
-
+<img src="readme_images/t_and_i.jpg" width="40%">
 ---
 
 ## 6. Text-to-Image Re-ID Experiments
@@ -188,7 +191,7 @@ This module also follows the **IRRA** framework and environment.
 * **Baseline**: real-world data only
 * **Evaluation strategy**: keep the test set fixed and progressively add synthetic individuals to the training set
 ### Synthetic data evaluation strategy:
-![Synthetic data evaluation strategy](readme_images/eval.jpg)
+<img src="readme_images/eval.jpg" width="40%">
 
 ### Dataset placement
 
@@ -214,12 +217,10 @@ Ablation studies show that adding **1,000 synthetic individuals** yields optimal
 Best checkpoint: `xxx`.
 
 ### Baseline text-to-image Re-ID:
-![Baseline text-to-image Re-ID](readme_images/reid_baseline.jpg)
-<img src="readme_images/reid_baseline.jpg" width="60%">
+<img src="readme_images/reid_baseline.jpg" width="40%">
 
 ### Optimal text-to-image Re-ID:
-![Optimal text-to-image Re-ID](readme_images/reid_best.jpg)
-
+<img src="readme_images/reid_best.jpg" width="40%">
 ---
 
 ## Acknowledgements

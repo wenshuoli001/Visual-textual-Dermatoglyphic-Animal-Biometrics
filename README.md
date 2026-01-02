@@ -5,8 +5,8 @@ This repository contains the **official project files and source code** for the 
 
 **Visual-textual Dermatoglyphic Animal Biometrics: A First Case Study on *Panthera tigris***
 
-- **Paper homepage**: [Paper homepage](https://wenshuoli001.github.io/vt-tiger-bio.github.io/)
-- **arXiv**: [arXiv](https://arxiv.org/abs/2512.14878)
+- [Paper homepage](https://wenshuoli001.github.io/vt-tiger-bio.github.io/)
+- [arXiv](https://arxiv.org/abs/2512.14878)
 
 ---
 
@@ -158,6 +158,8 @@ Please cite the above datasets and papers when using them.
 
 ## 5. Text and Image Re-ID Experiments
 
+**Directory**: `t_and_i_reid/`
+
 ### Reid protocols:
 <img src="readme_images/reid.jpg" width="60%">
 
@@ -199,6 +201,8 @@ Best same-modality Re-ID checkpoint can be downloaded from: [here](https://drive
 ---
 
 ## 6. Text-to-Image Re-ID Experiments
+
+**Directory**: `t_to_i_reid/`
 
 This module also follows the **IRRA** framework and environment.
 

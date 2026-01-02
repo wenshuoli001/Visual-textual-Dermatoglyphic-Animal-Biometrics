@@ -1,5 +1,4 @@
-# Visual-Textual Dermatoglyphic Animal Biometrics  
-## A First Case Study on *Panthera tigris*
+# Visual-Textual Dermatoglyphic Animal Biometrics: A First Case Study on *Panthera tigris*
 
 This repository contains the **official project files and source code** for the paper:
 

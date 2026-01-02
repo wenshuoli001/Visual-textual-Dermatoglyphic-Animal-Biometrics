@@ -178,10 +178,10 @@ feat = self.bottleneck(global_feat)
 
 put the data into 'data/amurtiger/'
 
-```
+
 
 ### Training
-
+```
 python train.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0')"
 ```
 

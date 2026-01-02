@@ -5,8 +5,8 @@ This repository contains the **official project files and source code** for the 
 
 **Visual-textual Dermatoglyphic Animal Biometrics: A First Case Study on *Panthera tigris***
 
-- **Paper homepage**: https://wenshuoli001.github.io/vt-tiger-bio.github.io/  
-- **arXiv**: https://arxiv.org/abs/2512.14878  
+- **Paper homepage**: [Paper homepage](https://wenshuoli001.github.io/vt-tiger-bio.github.io/)
+- **arXiv**: [arXiv](https://arxiv.org/abs/2512.14878)
 
 ---
 
@@ -48,9 +48,13 @@ This folder contains dermatoglyphic minutiae cropped from real-world tiger image
 ### Visual-textual Co-Synthesis:
 ![Visual-textual Co-Synthesis](readme_images/statistical_synthesis.jpg)
 
-### Synthetic UVs, you can download them from: 
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+### Synthetic UVs
+
+you can download them from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
+
+
 <img src="readme_images/UV.jpg" width="80%">
+
 ---
 
 ## 2. Houdini 3D Modeling (Hair, Pose, and Rendering)
@@ -61,8 +65,7 @@ This folder contains:
 - 3D tiger mesh source files  
 - Texture maps  
 
-HDRI can be downloaded from:
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+HDRI can be downloaded from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
 
 The main Houdini project file `tiger.hipnc` includes:
 - Hair grooming and physical simulation  
@@ -122,8 +125,7 @@ Please cite the corresponding paper when using this component.
 
 ### Real-world datasets
 
-you can download from:
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+you can download from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
 
 This contains 185 individuals and a total of 3,355 images, each cropped and paired with manually annotated, ACE-based dermatoglyphic descriptions of the coat pattern features.The images are sourced from：
 - **ATRW**  
@@ -134,8 +136,7 @@ This contains 185 individuals and a total of 3,355 images, each cropped and pair
 
 ### Synthetic datasets
 
-you can download from:
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+you can download from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
 
 Synthetic data were generated using our **image–text co-synthesis pipeline**, following ATRW standards.This covers 2,000 synthesised individuals across 24,000 images, with 12 images per virtual tiger under varying viewpoints and pose. Each image is accompanied by a corresponding, generated description
 of its stripe pattern structure.
@@ -191,8 +192,7 @@ python train.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('
 python test.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0')" TEST.WEIGHT 'result/clipmix_650.pth'
 ```
 
-Best same-modality Re-ID checkpoint can be downloaded from:
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+Best same-modality Re-ID checkpoint can be downloaded from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
 
 ### Single-text Re-ID results:
 <img src="readme_images/t_and_i.jpg" width="40%">
@@ -229,8 +229,7 @@ python test.py --config_file 'logs/RSTPReid/20250312_133553_iira/configs.yaml'
 
 Ablation studies show that adding **1,000 synthetic individuals** yields optimal text-to-image Re-ID performance.
 
-Best checkpoint can be downloaded from:
-https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+Best checkpoint can be downloaded from: [here](https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link)
 
 ### Baseline text-to-image Re-ID:
 <img src="readme_images/reid_baseline.jpg" width="40%">

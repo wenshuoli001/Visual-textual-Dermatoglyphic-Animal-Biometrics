@@ -45,9 +45,12 @@ This folder contains dermatoglyphic minutiae cropped from real-world tiger image
 - `synthesis/`  
   Region-aware statistical synthesis and RBF-based image warping correction guided by anatomical distribution priors.
 
-###Visual-textual Co-Synthesis
+### Visual-textual Co-Synthesis:
 ![Visual-textual Co-Synthesis](readme_images/statistical_synthesis.jpg)
 
+### Synthetic UVs, you can download them from: 
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+<img src="readme_images/UV.jpg" width="80%">
 ---
 
 ## 2. Houdini 3D Modeling (Hair, Pose, and Rendering)
@@ -57,7 +60,9 @@ This folder contains dermatoglyphic minutiae cropped from real-world tiger image
 This folder contains:
 - 3D tiger mesh source files  
 - Texture maps  
-- HDRI environment
+
+HDRI can be downloaded from:
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
 
 The main Houdini project file `tiger.hipnc` includes:
 - Hair grooming and physical simulation  
@@ -95,6 +100,8 @@ Batch rendering scripts `houdini_rendering.py` are provided and should be execut
 
 ## 3. Rendering, Background Fusion, and Post-Processing
 
+**Directory**: `render/`
+
 This module includes:
 - 80 real camera-trap background images  
 - Foreground processing  
@@ -115,6 +122,9 @@ Please cite the corresponding paper when using this component.
 
 ### Real-world datasets
 
+you can download from:
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
+
 This contains 185 individuals and a total of 3,355 images, each cropped and paired with manually annotated, ACE-based dermatoglyphic descriptions of the coat pattern features.The images are sourced from：
 - **ATRW**  
   https://weiyaolin.github.io/pdf/ATRW.pdf  
@@ -123,6 +133,9 @@ This contains 185 individuals and a total of 3,355 images, each cropped and pair
 
 
 ### Synthetic datasets
+
+you can download from:
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
 
 Synthetic data were generated using our **image–text co-synthesis pipeline**, following ATRW standards.This covers 2,000 synthesised individuals across 24,000 images, with 12 images per virtual tiger under varying viewpoints and pose. Each image is accompanied by a corresponding, generated description
 of its stripe pattern structure.
@@ -168,7 +181,7 @@ put the data into 'data/amurtiger/'
 
 ### Training
 
-```bash
+
 python train.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0')"
 ```
 
@@ -178,10 +191,12 @@ python train.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('
 python test.py --config_file configs/AmurTiger/vit_base.yml MODEL.DEVICE_ID "('0')" TEST.WEIGHT 'result/clipmix_650.pth'
 ```
 
-Best same-modality Re-ID checkpoint: `xxx`.
+Best same-modality Re-ID checkpoint can be downloaded from:
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
 
 ### Single-text Re-ID results:
 <img src="readme_images/t_and_i.jpg" width="40%">
+
 ---
 
 ## 6. Text-to-Image Re-ID Experiments
@@ -214,13 +229,15 @@ python test.py --config_file 'logs/RSTPReid/20250312_133553_iira/configs.yaml'
 
 Ablation studies show that adding **1,000 synthetic individuals** yields optimal text-to-image Re-ID performance.
 
-Best checkpoint: `xxx`.
+Best checkpoint can be downloaded from:
+https://drive.google.com/drive/folders/1QvQmridbL7Vk-Ttm6C7ZNv_FMzU4wKCe?usp=drive_link
 
 ### Baseline text-to-image Re-ID:
 <img src="readme_images/reid_baseline.jpg" width="40%">
 
 ### Optimal text-to-image Re-ID:
 <img src="readme_images/reid_best.jpg" width="40%">
+
 ---
 
 ## Acknowledgements

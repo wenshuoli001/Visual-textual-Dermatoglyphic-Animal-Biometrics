@@ -83,20 +83,20 @@ Batch rendering scripts `houdini_rendering.py` are provided and should be execut
 ### Biomimetic Pelage Synthesis:
 ![Biomimetic Pelage Synthesis](readme_images/hair.jpg)
 
-**Houdini Detail**:
-### OBJ panel configuration:
+### Houdini Detail:
+#### OBJ panel configuration:
 <img src="readme_images/obj.png" width="80%">
 
-### Pose modelling and region binding:
+#### Pose modelling and region binding:
 <img src="readme_images/pose.png" width="80%">
 
-### Hair modelling and physical simulation:
+#### Hair modelling and physical simulation:
 <img src="readme_images/hair.png" width="80%">
 
-### Stage migration for Karma renderer:
+#### Stage migration for Karma renderer:
 <img src="readme_images/stage.png" width="80%">
 
-### Stage materials:
+#### Stage materials:
 <img src="readme_images/stage_mat.png" width="80%">
 
 ---
